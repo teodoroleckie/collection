@@ -89,6 +89,8 @@ $collection->reverse(): CollectionInterface;
 
 $collection->prepend(mixed $item): CollectionInterface;
 
+$collection->append(mixed $item): CollectionInterface;
+
 $collection->toArray(): array;
 
 $collection->push(mixed $item): CollectionInterface;
