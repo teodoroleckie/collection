@@ -72,7 +72,7 @@ $collection = $collection->find(function (int $key, User $user) {
 
 
 // sort
-$collection = $collection->sort(function (mixed $current, mixed $next) {
+$collection = $collection->sort(function (User $current, User $next) {
     if ($current->id() === $next->id()) {
         return 0;
     }
