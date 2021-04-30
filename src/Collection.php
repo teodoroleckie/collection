@@ -182,9 +182,9 @@ class Collection implements CollectionInterface
     }
 
     /**
-     * @return string|float|int|bool
+     * @return string|float|int|bool|null
      */
-    public function key(): string|float|int|bool
+    public function key(): string|float|int|bool|null
     {
         return key($this->items);
     }
