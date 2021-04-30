@@ -29,4 +29,10 @@ interface CollectionInterface extends
      * @return CollectionInterface
      */
     public function append(mixed $item): CollectionInterface;
+
+    /**
+     * @param mixed $item
+     * @return CollectionInterface
+     */
+    public function prepend(mixed $item): CollectionInterface;
 }
