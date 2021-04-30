@@ -1,4 +1,4 @@
-# PHP Collection
+# Simple and powerful library for collections in PHP
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tleckie/collection.svg?style=flat-square)](https://packagist.org/packages/tleckie/collection)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/teodoroleckie/collection/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/teodoroleckie/collection/?branch=main)
