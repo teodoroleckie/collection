@@ -22,6 +22,7 @@ Hash collections should be used when you need the keys to be strings.
 <?php
 
 use Tleckie\Collection\Hash;
+use Tleckie\Collection\HashInterface;
 
 // Create your own collection type
 class UserCollection extends Hash {}
@@ -37,9 +38,9 @@ $users = [
 $userCollection = new UserCollection($users);
 
 /**
- * @param Hash $userCollection
+ * @param HashInterface $userCollection
  */
-public function addCollection(Hash $userCollection){ ... }
+public function addCollection(HashInterface $userCollection){ ... }
 
 /**
  * @param UserCollection $userCollection
@@ -110,6 +111,7 @@ If you want you can create your own type of collection
 <?php
 
 use Tleckie\Collection\Sequence;
+use Tleckie\Collection\SequenceInterface;
 
 // Create your own collection type
 class UserCollection extends Sequence {}
@@ -125,9 +127,9 @@ $users = [
 $userCollection = new UserCollection($users);
 
 /**
- * @param Sequence $userCollection
+ * @param SequenceInterface $userCollection
  */
-public function addCollection(Sequence $userCollection){ ... }
+public function addCollection(SequenceInterface $userCollection){ ... }
 
 /**
  * @param UserCollection $userCollection
