@@ -15,7 +15,12 @@
     "text": ".\/infection-report"
   },
   "mutators": {
-    "@default": true
+    "@default": true,
+    "FunctionCallRemoval": {
+        "ignore": [
+            "Tleckie\\Collection\\Sequence::sortByKey"
+        ]
+    }
   },
   "testFramework":"phpunit",
   "bootstrap": "./vendor/autoload.php"

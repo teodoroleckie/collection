@@ -51,6 +51,7 @@
     "tests": "./bin/phpunit ./tests/",
     "infection": "infection",
     "check": [
+      "@putenv XDEBUG_MODE=coverage",
       "@fix-src",
       "@fix-tests",
       "@tests",
