@@ -14,9 +14,9 @@ You can install the package via composer:
 composer require tleckie/collection
 ```
 
-### Usage
+## Usage
 
-## Hash
+# Hash
 Hash collections should be used when you need the keys to be strings.
 ```php
 <?php
@@ -101,7 +101,7 @@ public function shuffle(): HashInterface;
 public function toArray(): array;
 ```
 
-## Sequence:
+# Sequence:
 The sequences are used when the key of the collection is not important besides being ordered. Many of its methods are immutable.
 
 If you want you can create your own type of collection
@@ -188,7 +188,7 @@ public function toArray(): array;
 
 ```
 
-## Collection:
+# Collection:
 Use the collection when you have numeric and string keys.
 
 ```php
@@ -255,7 +255,7 @@ $collection = $collection->sort(function (User $current, User $next) {
 }); // UserCollection( [ User(5), User(4), User(3), User(2), User(1) ] );
 ```
 
-### Other methods:
+## Other methods:
 
 ```php
 $collection->shuffle(): CollectionInterface;
